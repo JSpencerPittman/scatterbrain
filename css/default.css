@@ -1,0 +1,43 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
+
+/* Page Layout */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.full-size-of-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+
+    background-color: #AEB877;
+}
+
+.content-container {
+    margin-top: 4vh;
+    width: 67%;
+    box-sizing: border-box;
+    padding: 3%;
+    border-radius: 10px 10px 0 0;
+    
+    background-color: #A5C89E;
+    border: solid #D8E983 5px;
+    border-bottom: 0px;
+}
+
+/* Generics */
+
+.header {
+    text-align: center;
+
+    font-family: "Bitcount Prop Single", system-ui;
+    color: #D8E983;
+}

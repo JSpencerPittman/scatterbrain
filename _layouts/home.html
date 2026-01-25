@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div id="home-header">
+    <h1 class="header">Scatter Brain</h1>
+    <h2 class="header">Jason S. Pittman</h2>
+</div>
+
+
+<div id="home-post-index">
+    <h3 class="header">Recent Posts</h3>
+    <ul>
+        {% for post in site.posts %}
+        <li class="home-post-listing">
+            <a class="home-post-listing-title" href="{{ post.url }}">{{ post.title }}</a>
+            <p class="home-post-listing-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
