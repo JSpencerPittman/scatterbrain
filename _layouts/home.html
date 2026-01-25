@@ -12,7 +12,7 @@ layout: default
     <ul>
         {% for post in site.posts %}
         <li class="home-post-listing">
-            <a class="home-post-listing-title" href="{{ post.url }}">{{ post.title }}</a>
+            <a class="home-post-listing-title" href="{{.site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
             <p class="home-post-listing-date">{{ post.date | date: "%B %-d, %Y" }}</p>
         </li>
         {% endfor %}
